@@ -1,3 +1,1 @@
-export const sameFrequency = () => {
-  return 'Hello';
-};
+export const sameFrequency = () => {};
