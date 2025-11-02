@@ -13,7 +13,7 @@ nvm use
 Install NPM dependencies
 
 ```bash
-npm install
+npm ci
 ```
 
 # Running TypeScript
