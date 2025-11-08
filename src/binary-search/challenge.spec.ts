@@ -1,4 +1,4 @@
-import { binarySearch } from './solution';
+import { binarySearch, calculateMidpoint } from './solution';
 
 describe('binarySearch()', () => {
   it('accepts an array and a value as arguments', () => {
@@ -88,6 +88,48 @@ describe('binarySearch()', () => {
 
         expect(result).toEqual(-1);
       }
+    });
+  });
+});
+
+describe('calculateMidpoint()', () => {
+  describe('Given numbers with a delta of 0', () => {
+    it('should return 0', () => {
+      const result = calculateMidpoint(0, 0);
+
+      expect(result).toEqual(0);
+    });
+  });
+
+  describe('Given numbers with a delta of 1', () => {
+    it('should return 0', () => {
+      const result = calculateMidpoint(0, 1);
+
+      expect(result).toEqual(0);
+    });
+  });
+
+  describe('Given numbers with a delta of 2', () => {
+    it('should return 0', () => {
+      const result = calculateMidpoint(0, 2);
+
+      expect(result).toEqual(1);
+    });
+  });
+
+  describe('Given numbers with a delta of 2', () => {
+    it('should return 2', () => {
+      const result = calculateMidpoint(1, 3);
+
+      expect(result).toEqual(2);
+    });
+  });
+
+  describe('Given numbers with a delta of 3', () => {
+    it('should return 2', () => {
+      const result = calculateMidpoint(0, 4);
+
+      expect(result).toEqual(2);
     });
   });
 });

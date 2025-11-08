@@ -24,6 +24,6 @@ export const binarySearch = (items: number[], value: number): number => {
   return -1;
 };
 
-const calculateMidpoint = (lowerBound: number, upperBound: number): number => {
+export const calculateMidpoint = (lowerBound: number, upperBound: number): number => {
   return Math.floor((upperBound + lowerBound) / 2);
 };
